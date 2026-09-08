@@ -15,6 +15,14 @@ const Apply = () => {
     navigate(`/detail/${id}/complete`);
   }
 
+  if (!item) {
+    return (
+      <div>
+        <h1>イベントが見つかりません</h1>
+        <p>指定されたイベントは存在しないか、削除された可能性があります。</p>
+      </div>
+    );
+  }
   return (
     <div className='w-2/3 m-auto text-left rounded-xl border p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 mb-20'>
       <Link
