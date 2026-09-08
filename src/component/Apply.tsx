@@ -10,7 +10,8 @@ const Apply = () => {
   // findで一致する一件だけを返す
   const item = eventData.find((data: eventType) => data.id === paramId);
 
-  const applyClick = () => {
+  const applyClick = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     confirm("（テスト）確認メールを送信しました!");
     navigate(`/detail/${id}/complete`);
   }
