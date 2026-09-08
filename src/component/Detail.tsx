@@ -22,8 +22,8 @@ const Detail = () => {
 
   return (
     <div className='md:flex md:gap-8 mb-20'>
-      <div className='md:flex-2 rounded-xl border w-full p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500'>
-        <p className='text-[36px] font-bold text-left pb-8'>{item.title}</p>
+      <div className='md:flex-2 rounded-xl border w-full p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 mb-10'>
+        <p className='text-[36px] font-bold text-left pb-8 leading-none'>{item.title}</p>
         <p className="whitespace-pre-line text-left pb-8 font-medium">{item.info}</p>
         <img src='../community1.jpg' className='rounded-md'></img>
       </div>

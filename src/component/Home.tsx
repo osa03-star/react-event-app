@@ -13,7 +13,7 @@ const Home = () => {
   }
 
   return (
-    <div className='w-2/3 m-auto mb-20'>
+    <div className='md:w-2/3 m-auto mb-20'>
       {eventData.map((item: eventType) => (
         <div 
           className='rounded-xl border w-full p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 hover:shadow-lg transition-shadow duration-300 mb-5 cursor-pointer'
@@ -22,16 +22,16 @@ const Home = () => {
         >
           <p className='text-[24px] font-bold text-left'>{item.title}</p>
           <p className='text-[14px] text-left'>{item.info}</p>
-          <div className='flex text-[14px] mt-5 font-bold gap-4'>
-            <div className='flex items-center justify-center'>
+          <div className='md:flex text-[14px] mt-5 font-bold gap-4'>
+            <div className='flex items-center md:justify-center justify-left'>
               <SlCalender size={16} className='text-blue-500'/>
               <p className='pl-1'>{item.date}</p>
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center md:justify-center justify-left'>
               <MdOutlinePlace size={16} className='text-green-500'/>
               <p className='pl-1'>{item.place}</p>
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center md:justify-center justify-left'>
               <IoPeopleOutline size={18} className='text-purple-500'/>
               <p className='pl-1'>{item.attendee}人参加予定</p>
             </div>

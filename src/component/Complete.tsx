@@ -18,7 +18,7 @@ const Complete = () => {
   }
 
   return (
-    <div className='w-2/3 m-auto text-left rounded-xl border p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 mb-20'>
+    <div className='md:w-2/3 m-auto text-left rounded-xl border p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 mb-20'>
       <p className='text-2xl font-bold mb-4 text-gray-800 pb-6'>🎉 イベント申し込みが完了しました！</p>
       <p className='pb-4'>当日は、下記の時間に余裕を持ってご参加ください！</p>
       <ul className="list-disc pl-4">

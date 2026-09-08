@@ -9,14 +9,14 @@ import './App.css'
 
 function App() {
   return (
-    <div>
-      <div className='flex items-center justify-center mt-8 mb-8 gap-4'>
-        <div className='inline-flex items-center justify-center bg-black h-20 w-20 rounded-full'>
-          <SlCalender className='text-[oklch(86.5%_0.127_207.078)]' size={36}/>
+    <div className="pl-4 pr-4">
+      <div className='flex items-center justify-center  mt-10 mb-10 md:mt-8 md:mb-8 gap-4'>
+        <div className='shrink-0 inline-flex items-center justify-center bg-black h-16 w-16 md:h-20 md:w-20 rounded-full'>
+          <SlCalender className='h-6 w-6 text-[oklch(86.5%_0.127_207.078)] md:h-9 md:w-9'/>
         </div>
-        <p className='text-[48px] font-bold'>React イベントカレンダー</p>
+        <p className='text-[26px] md:text-[48px] font-bold leading-none'>React イベントカレンダー</p>
       </div>
-      <p>
+      <p className="pb-5">
         定期的に開催されるイベントをチェックして、学習と交流を加速させましょう。<br />
         最新情報を受け取りたい場合は、ぜひフォローしてください。
       </p>
