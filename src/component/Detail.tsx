@@ -1,16 +1,24 @@
 import type { eventType } from '../type/type.ts'
 import { eventData } from '../data/data.ts'
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlinePlace } from "react-icons/md";
 import { IoPeopleOutline } from "react-icons/io5";
 
 const Detail = () => {
-  const navigate = useNavigate();
   const { id } = useParams();
   const paramId = Number(id);
   // findで一致する一件だけを返す
   const item = eventData.find((data: eventType) => data.id === paramId);
+
+  if (!item) {
+    return (
+      <div>
+        <h1>イベントが見つかりません</h1>
+        <p>指定されたイベントは存在しないか、削除された可能性があります。</p>
+      </div>
+    );
+  }
 
   return (
     <div className='md:flex md:gap-8 mb-20'>

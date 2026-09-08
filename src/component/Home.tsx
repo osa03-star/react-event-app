@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { SlCalender } from "react-icons/sl";
 import type { eventType } from '../type/type.ts'
 import { eventData } from '../data/data.ts'
@@ -15,7 +14,7 @@ const Home = () => {
 
   return (
     <div className='w-2/3 m-auto mb-20'>
-      {eventData.map((item: eventType, index) => (
+      {eventData.map((item: eventType) => (
         <div 
           className='rounded-xl border w-full p-6 space-y-8 bg-gradient-to-br from-slate-50 to-sky-100 border-sky-500 hover:shadow-lg transition-shadow duration-300 mb-5 cursor-pointer'
           key={item.id}

@@ -1,7 +1,4 @@
-import { useState } from 'react'
 import { SlCalender } from "react-icons/sl";
-import type { eventType } from './type/type.ts'
-import { eventData } from './data/data.ts'
 import { Routes, Route } from "react-router-dom"
 import Home from './component/Home.tsx'
 import Detail from './component/Detail.tsx'
