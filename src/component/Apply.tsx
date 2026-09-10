@@ -36,7 +36,7 @@ const Apply = () => {
       <p className='text-[30px] md:text-4xl font-bold mb-4 text-gray-800 pb-6'>イベントに申し込む</p>
       <p className='pb-2'>参加者のメールアドレス：</p>
       <form onSubmit={applyClick} className='md:flex gap-5 mb-2'>
-        <input className='border border-gray-300 rounded-xl p-2 w-full bg-white mb-4' required type='email'/>
+        <input className='border border-gray-300 rounded-xl p-2 w-full bg-white mb-4 md:mb-0 md:w-2/3' required type='email'/>
         <button 
           className='py-4 md:w-1/3 bg-sky-600 hover:opacity-80 text-white rounded-xl text-[16px] px-6 w-full'
           type="submit"
